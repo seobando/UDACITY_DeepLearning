@@ -1,0 +1,37 @@
+# Data files
+*.data
+*.dat
+data/
+
+# CSV
+*.csv
+
+# Excel
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.xltx
+*.xltm
+
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+*.webp
+*.tiff
+*.tif
+*.svg
+*.heic
+
+# Archives
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# Python bytecode (.cpython-*.pyc)
+*cpython*
