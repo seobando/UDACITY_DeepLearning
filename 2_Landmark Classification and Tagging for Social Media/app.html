@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>app</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script>
+<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script>
 (function() {
   function addWidgetsRenderer() {
     var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
@@ -7823,7 +7823,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9b454680">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3c65c309">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7836,17 +7836,17 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7aea8790">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=97cd9fb8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Please restart the notebook kernel after running this cell.</span>
-<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>
-<span class="c1">#| grep -v "already satisfied"</span>
+<span class="c1">#!pip install -r requirements.txt </span>
+<span class="c1"># | grep -v "already satisfied"</span>
 </pre></div>
 </div>
 </div>
@@ -7859,81 +7859,18 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Requirement already satisfied: opencv-python-headless&gt;=4.5.3 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 3)) (4.11.0.86)
-Requirement already satisfied: matplotlib&gt;=3.4 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 4)) (3.10.8)
-Requirement already satisfied: numpy&lt;2,&gt;=1.21 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 5)) (1.26.4)
-Requirement already satisfied: pillow&gt;=7.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 6)) (12.1.0)
-Requirement already satisfied: bokeh&gt;=2.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 7)) (3.8.2)
-Requirement already satisfied: torch&gt;=1.11 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 8)) (2.10.0)
-Requirement already satisfied: torchvision&gt;=0.12 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 9)) (0.25.0)
-Requirement already satisfied: tqdm&gt;=4.63 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 10)) (4.67.2)
-Requirement already satisfied: ipywidgets&gt;=7.6 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 11)) (8.1.5)
-Requirement already satisfied: livelossplot&gt;=0.5 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 12)) (0.5.6)
-Requirement already satisfied: pytest&gt;=7.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 13)) (9.0.2)
-Requirement already satisfied: pandas&gt;=1.3 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 14)) (3.0.0)
-Requirement already satisfied: seaborn&gt;=0.11 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from -r requirements.txt (line 15)) (0.13.2)
-Requirement already satisfied: contourpy&gt;=1.0.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (1.3.3)
-Requirement already satisfied: cycler&gt;=0.10 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (0.12.1)
-Requirement already satisfied: fonttools&gt;=4.22.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (4.61.1)
-Requirement already satisfied: kiwisolver&gt;=1.3.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (1.4.9)
-Requirement already satisfied: packaging&gt;=20.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (26.0)
-Requirement already satisfied: pyparsing&gt;=3 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (3.3.2)
-Requirement already satisfied: python-dateutil&gt;=2.7 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (2.9.0.post0)
-Requirement already satisfied: Jinja2&gt;=2.9 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from bokeh&gt;=2.1-&gt;-r requirements.txt (line 7)) (3.1.6)
-Requirement already satisfied: narwhals&gt;=1.13 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from bokeh&gt;=2.1-&gt;-r requirements.txt (line 7)) (2.16.0)
-Requirement already satisfied: PyYAML&gt;=3.10 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from bokeh&gt;=2.1-&gt;-r requirements.txt (line 7)) (6.0.3)
-Requirement already satisfied: tornado&gt;=6.2 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from bokeh&gt;=2.1-&gt;-r requirements.txt (line 7)) (6.5.4)
-Requirement already satisfied: xyzservices&gt;=2021.09.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from bokeh&gt;=2.1-&gt;-r requirements.txt (line 7)) (2025.11.0)
-Requirement already satisfied: filelock in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from torch&gt;=1.11-&gt;-r requirements.txt (line 8)) (3.20.3)
-Requirement already satisfied: typing-extensions&gt;=4.10.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from torch&gt;=1.11-&gt;-r requirements.txt (line 8)) (4.15.0)
-Requirement already satisfied: sympy&gt;=1.13.3 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from torch&gt;=1.11-&gt;-r requirements.txt (line 8)) (1.14.0)
-Requirement already satisfied: networkx&gt;=2.5.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from torch&gt;=1.11-&gt;-r requirements.txt (line 8)) (3.6.1)
-Requirement already satisfied: fsspec&gt;=0.8.5 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from torch&gt;=1.11-&gt;-r requirements.txt (line 8)) (2026.1.0)
-Requirement already satisfied: setuptools in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from torch&gt;=1.11-&gt;-r requirements.txt (line 8)) (80.10.2)
-Requirement already satisfied: colorama in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from tqdm&gt;=4.63-&gt;-r requirements.txt (line 10)) (0.4.6)
-Requirement already satisfied: comm&gt;=0.1.3 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (0.2.3)
-Requirement already satisfied: ipython&gt;=6.1.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (9.10.0)
-Requirement already satisfied: traitlets&gt;=4.3.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (5.14.3)
-Requirement already satisfied: widgetsnbextension~=4.0.12 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (4.0.15)
-Requirement already satisfied: jupyterlab-widgets~=3.0.12 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (3.0.16)
-Requirement already satisfied: iniconfig&gt;=1.0.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from pytest&gt;=7.1-&gt;-r requirements.txt (line 13)) (2.3.0)
-Requirement already satisfied: pluggy&lt;2,&gt;=1.5 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from pytest&gt;=7.1-&gt;-r requirements.txt (line 13)) (1.6.0)
-Requirement already satisfied: pygments&gt;=2.7.2 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from pytest&gt;=7.1-&gt;-r requirements.txt (line 13)) (2.19.2)
-Requirement already satisfied: tzdata in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from pandas&gt;=1.3-&gt;-r requirements.txt (line 14)) (2025.3)
-Requirement already satisfied: decorator&gt;=4.3.2 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (5.2.1)
-Requirement already satisfied: ipython-pygments-lexers&gt;=1.0.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (1.1.1)
-Requirement already satisfied: jedi&gt;=0.18.1 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (0.19.2)
-Requirement already satisfied: matplotlib-inline&gt;=0.1.5 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (0.2.1)
-Requirement already satisfied: prompt_toolkit&lt;3.1.0,&gt;=3.0.41 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (3.0.52)
-Requirement already satisfied: stack_data&gt;=0.6.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (0.6.3)
-Requirement already satisfied: wcwidth in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from prompt_toolkit&lt;3.1.0,&gt;=3.0.41-&gt;ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (0.5.3)
-Requirement already satisfied: parso&lt;0.9.0,&gt;=0.8.4 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from jedi&gt;=0.18.1-&gt;ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (0.8.5)
-Requirement already satisfied: MarkupSafe&gt;=2.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from Jinja2&gt;=2.9-&gt;bokeh&gt;=2.1-&gt;-r requirements.txt (line 7)) (3.0.3)
-Requirement already satisfied: six&gt;=1.5 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib&gt;=3.4-&gt;-r requirements.txt (line 4)) (1.17.0)
-Requirement already satisfied: executing&gt;=1.2.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from stack_data&gt;=0.6.0-&gt;ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (2.2.1)
-Requirement already satisfied: asttokens&gt;=2.1.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from stack_data&gt;=0.6.0-&gt;ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (3.0.1)
-Requirement already satisfied: pure-eval in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from stack_data&gt;=0.6.0-&gt;ipython&gt;=6.1.0-&gt;ipywidgets&gt;=7.6-&gt;-r requirements.txt (line 11)) (0.2.3)
-Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in c:\users\sebas\documents\projects\nanodegrees\udacity_deeplearning\.venv\lib\site-packages (from sympy&gt;=1.13.3-&gt;torch&gt;=1.11-&gt;-r requirements.txt (line 8)) (1.3.0)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-[notice] A new release of pip is available: 25.2 -&gt; 26.0
-[notice] To update, run: python.exe -m pip install --upgrade pip
+<pre>Defaulting to user installation because normal site-packages is not writeable
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3db72a34">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=12f12e15">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Please restart the notebook kernel after running this cell as well.</span>
@@ -7949,7 +7886,7 @@ Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in c:\users\sebas\docume
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
                [--paths] [--json] [--debug]
                [subcommand]
@@ -7970,8 +7907,7 @@ options:
   --json         output paths as machine-readable json
   --debug        output debug information about paths
 
-Available subcommands: console dejavu events execute kernel kernelspec lab
-labextension labhub migrate nbconvert notebook run server troubleshoot trust
+Available subcommands: kernel kernelspec migrate run troubleshoot
 
 Jupyter command `jupyter-nbextension` not found.
 </pre>
@@ -7980,7 +7916,7 @@ Jupyter command `jupyter-nbextension` not found.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4f2fee8c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6c76a81a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7995,12 +7931,12 @@ Jupyter command `jupyter-nbextension` not found.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ced12104">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=79a8ef47">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">VBox</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">FileUpload</span><span class="p">,</span> <span class="n">Output</span><span class="p">,</span> <span class="n">Label</span>
@@ -8013,15 +7949,20 @@ Jupyter command `jupyter-nbextension` not found.
 <span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
 
 <span class="c1"># Decide which model you want to use among the ones exported</span>
+<span class="c1"># (Run transfer_learning.ipynb or cnn_from_scratch.ipynb first to create the .pt file)</span>
 <span class="n">learn_inf</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">jit</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">"checkpoints/transfer_exported.pt"</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">on_click_classify</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
 
     <span class="c1"># Load image that has been uploaded</span>
-    <span class="n">fn</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">btn_upload</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="c1"># ipywidgets 8.0+ uses .value (list of dicts) instead of .data</span>
+    <span class="n">uploaded</span> <span class="o">=</span> <span class="n">btn_upload</span><span class="o">.</span><span class="n">value</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">fn</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">uploaded</span><span class="p">[</span><span class="s2">"content"</span><span class="p">]</span><span class="o">.</span><span class="n">tobytes</span><span class="p">())</span>
 
     <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
     <span class="n">img</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+    <span class="c1"># Model expects 3-channel RGB; convert RGBA/grayscale to RGB</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s2">"RGB"</span><span class="p">)</span>
 
     <span class="c1"># Let's clear the previous output (if any)</span>
     <span class="n">out_pl</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
@@ -8082,7 +8023,7 @@ Jupyter command `jupyter-nbextension` not found.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>VBox(children=(Label(value='Please upload a picture of a landmark'), FileUpload(value=(), description='Upload'…</pre>
 </div>
@@ -8090,7 +8031,7 @@ Jupyter command `jupyter-nbextension` not found.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ddbfe2a3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2a1e335f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8109,7 +8050,7 @@ Jupyter command `jupyter-nbextension` not found.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4cff89b3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=707874a1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8119,16 +8060,68 @@ Jupyter command `jupyter-nbextension` not found.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ed7ab4ee">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3232772f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>python<span class="w"> </span>src/create_submit_pkg.py
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>executing: jupyter nbconvert --to html app.ipynb
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
+               [--paths] [--json] [--debug]
+               [subcommand]
+
+Jupyter: Interactive Computing
+
+positional arguments:
+  subcommand     the subcommand to launch
+
+options:
+  -h, --help     show this help message and exit
+  --version      show the versions of core jupyter packages and exit
+  --config-dir   show Jupyter config dir
+  --data-dir     show Jupyter data dir
+  --runtime-dir  show Jupyter runtime dir
+  --paths        show all Jupyter paths. Add --json for machine-readable
+                 format.
+  --json         output paths as machine-readable json
+  --debug        output debug information about paths
+
+Available subcommands: kernel kernelspec migrate run troubleshoot
+
+Jupyter command `jupyter-nbconvert` not found.
+Traceback (most recent call last):
+  File <span class="ansi-magenta-fg">"c:\Users\sebas\Documents\Projects\nanodegrees\UDACITY_DeepLearning\2_Landmark Classification and Tagging for Social Media\src\create_submit_pkg.py"</span>, line <span class="ansi-magenta-fg">40</span>, in <span class="ansi-magenta-fg">&lt;module&gt;</span>
+    <span class="ansi-red-fg">create_submit_pkg</span><span class="ansi-red-intense-fg ansi-bold">()</span>
+    <span class="ansi-red-fg">~~~~~~~~~~~~~~~~~</span><span class="ansi-red-intense-fg ansi-bold">^^</span>
+  File <span class="ansi-magenta-fg">"c:\Users\sebas\Documents\Projects\nanodegrees\UDACITY_DeepLearning\2_Landmark Classification and Tagging for Social Media\src\create_submit_pkg.py"</span>, line <span class="ansi-magenta-fg">20</span>, in <span class="ansi-magenta-fg">create_submit_pkg</span>
+    <span class="ansi-red-fg">subprocess.check_call</span><span class="ansi-red-intense-fg ansi-bold">(cmd_line, shell=True)</span>
+    <span class="ansi-red-fg">~~~~~~~~~~~~~~~~~~~~~</span><span class="ansi-red-intense-fg ansi-bold">^^^^^^^^^^^^^^^^^^^^^^</span>
+  File <span class="ansi-magenta-fg">"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py"</span>, line <span class="ansi-magenta-fg">419</span>, in <span class="ansi-magenta-fg">check_call</span>
+    raise CalledProcessError(retcode, cmd)
+<span class="ansi-magenta-intense-fg ansi-bold">subprocess.CalledProcessError</span>: <span class="ansi-magenta-fg">Command 'jupyter nbconvert --to html app.ipynb' returned non-zero exit status 1.</span>
+</pre>
 </div>
 </div>
 </div>

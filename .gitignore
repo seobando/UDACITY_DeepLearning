@@ -35,3 +35,13 @@ data/
 
 # Python bytecode (.cpython-*.pyc)
 *cpython*
+
+# Large Images
+2_Landmark Classification and Tagging for Social Media/landmark_images/
+
+
+# Checkpoints
+2_Landmark Classification and Tagging for Social Media/checkpoints/
+
+# Pytest
+.pytest_cache/

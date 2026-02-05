@@ -1,7 +1,9 @@
 import datetime
 import glob
-import subprocess
 import tarfile
+
+import nbformat
+from nbconvert import HTMLExporter
 
 
 def create_submit_pkg():
@@ -12,12 +14,15 @@ def create_submit_pkg():
     # Notebooks
     notebooks = glob.glob("*.ipynb")
 
-    # Genereate HTML files from the notebooks
+    # Generate HTML files from the notebooks (using nbconvert Python API)
     for nb in notebooks:
-        cmd_line = f"jupyter nbconvert --to html {nb}"
-
-        print(f"executing: {cmd_line}")
-        subprocess.check_call(cmd_line, shell=True)
+        print(f"executing: convert {nb} -> HTML")
+        with open(nb, encoding="utf-8") as f:
+            nb_node = nbformat.read(f, as_version=4)
+        (body, _) = HTMLExporter().from_notebook_node(nb_node)
+        out_path = nb.replace(".ipynb", ".html")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(body)
 
     html_files = glob.glob("*.htm*")
 

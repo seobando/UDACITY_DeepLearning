@@ -33,51 +33,38 @@ def get_data_loaders(
     mean, std = compute_mean_and_std()
     print(f"Dataset mean: {mean}, std: {std}")
 
-    # YOUR CODE HERE:
-    # create 3 sets of data transforms: one for the training dataset,
-    # containing data augmentation, one for the validation dataset
-    # (without data augmentation) and one for the test set (again
-    # without augmentation)
-    # HINT: resize the image to 256 first, then crop them to 224, then add the
-    # appropriate transforms for that step
     data_transforms = {
-        "train": transforms.Compose(
-            [
-                transforms.Resize(256),
-                transforms.RandomCrop(224),
-                transforms.RandomHorizontalFlip(),
-                transforms.ToTensor(),
-                transforms.Normalize(mean=mean.tolist(), std=std.tolist()),
-            ]
-        ),
-        "valid": transforms.Compose(
-            [
-                transforms.Resize(256),
-                transforms.CenterCrop(224),
-                transforms.ToTensor(),
-                transforms.Normalize(mean=mean.tolist(), std=std.tolist()),
-            ]
-        ),
-        "test": transforms.Compose(
-            [
-                transforms.Resize(256),
-                transforms.CenterCrop(224),
-                transforms.ToTensor(),
-                transforms.Normalize(mean=mean.tolist(), std=std.tolist()),
-            ]
-        ),
+        "train": transforms.Compose([
+            transforms.Resize(256),
+            transforms.RandomResizedCrop(224),
+            transforms.RandomHorizontalFlip(), # Augmentation
+            transforms.ToTensor(),
+            transforms.Normalize(mean, std)
+        ]),
+        "valid": transforms.Compose([
+            transforms.Resize(256),
+            transforms.CenterCrop(224),
+            transforms.ToTensor(),
+            transforms.Normalize(mean, std)
+        ]),
+        "test": transforms.Compose([
+            transforms.Resize(256),
+            transforms.CenterCrop(224),
+            transforms.ToTensor(),
+            transforms.Normalize(mean, std)
+        ]),
     }
 
     # Create train and validation datasets
     train_data = datasets.ImageFolder(
-        base_path / "train",
-        transform=data_transforms["train"],
+        base_path / "train", 
+        transform=data_transforms["train"]
     )
     # The validation dataset is a split from the train_one_epoch dataset, so we read
     # from the same folder, but we apply the transforms for validation
     valid_data = datasets.ImageFolder(
-        base_path / "train",
-        transform=data_transforms["valid"],
+        base_path / "train", 
+        transform=data_transforms["valid"]
     )
 
     # obtain training indices that will be used for validation
@@ -94,7 +81,7 @@ def get_data_loaders(
 
     # define samplers for obtaining training and validation batches
     train_sampler = torch.utils.data.SubsetRandomSampler(train_idx)
-    valid_sampler = torch.utils.data.SubsetRandomSampler(valid_idx)
+    valid_sampler  = torch.utils.data.SubsetRandomSampler(valid_idx)
 
     # prepare data loaders
     data_loaders["train"] = torch.utils.data.DataLoader(
@@ -104,16 +91,16 @@ def get_data_loaders(
         num_workers=num_workers,
     )
     data_loaders["valid"] = torch.utils.data.DataLoader(
-        valid_data,
-        batch_size=batch_size,
-        sampler=valid_sampler,
-        num_workers=num_workers,
+        valid_data, 
+        batch_size=batch_size, 
+        sampler=valid_sampler, 
+        num_workers=num_workers
     )
 
     # Now create the test data loader
     test_data = datasets.ImageFolder(
-        base_path / "test",
-        transform=data_transforms["test"],
+        base_path / "test", 
+        transform=data_transforms["test"]
     )
 
     if limit > 0:
@@ -123,11 +110,11 @@ def get_data_loaders(
         test_sampler = None
 
     data_loaders["test"] = torch.utils.data.DataLoader(
-        test_data,
-        batch_size=batch_size,
-        sampler=test_sampler,
-        shuffle=False,
-        num_workers=num_workers,
+        test_data, 
+        batch_size=batch_size, 
+        sampler=test_sampler, 
+        shuffle=False, 
+        num_workers=num_workers
     )
 
     return data_loaders
@@ -142,7 +129,6 @@ def visualize_one_batch(data_loaders, max_n: int = 5):
     :return: None
     """
 
-    # YOUR CODE HERE:
     # obtain one batch of training images
     # First obtain an iterator from the train dataloader
     dataiter = iter(data_loaders["train"])

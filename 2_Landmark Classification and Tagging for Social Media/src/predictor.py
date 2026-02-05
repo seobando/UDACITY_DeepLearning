@@ -56,15 +56,15 @@ def predictor_test(test_dataloader, model_reloaded):
 
         idx = softmax.squeeze().argmax()
 
-        pred.append(int(idx))
-        truth.append(int(x[1]))
+        pred.append(int(x[1]))
+        truth.append(int(idx))
 
     pred = np.array(pred)
     truth = np.array(truth)
 
     print(f"Accuracy: {(pred==truth).sum() / pred.shape[0]}")
 
-    return pred, truth
+    return truth, pred
 
 
 ######################################################################################
